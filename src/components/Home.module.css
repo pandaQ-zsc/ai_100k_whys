@@ -1,0 +1,38 @@
+.home {
+    width: 1080px;
+    height: 607px;
+    background: rgba(255,250,137,1);
+}
+.title {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 60px;
+}
+.imgs {
+    position: relative;
+    height: 360px;
+    width: 660px;
+    margin: auto;
+}
+.imgs img{
+    display: inline-block;
+}
+.img_left {
+    z-index: 0;
+    position: relative;
+}
+.img_mid {
+    z-index: 1;
+    position: relative;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.img_right {
+    z-index: 0;
+    position: relative;
+}
+.progressbar {
+    position: relative;
+    margin: auto;
+    width: 320px;
+}

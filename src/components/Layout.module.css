@@ -1,0 +1,25 @@
+.main {
+    margin: auto;
+    margin-top: 25px;
+    width: 1160px;
+    height: 670px;
+    position: relative;
+    background-image: url(../imgs/ipad_pro_2_sd.png);
+    background-size: 1160px;
+    padding:32px 40px;
+    background-repeat: no-repeat;
+}
+
+.content {
+    margin: auto;
+    width: 1080px;
+    height: 607px;
+    background-color: #fff;
+    opacity: 1;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
