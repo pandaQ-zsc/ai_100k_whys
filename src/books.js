@@ -48,13 +48,13 @@ const data = [
                 {
                   q: "我不相信伽利略",
                   goto: {
-                    page: 5,
+                    branch: "1",
                   },
                 },
                 {
                   q: "我相信伽利略！",
                   goto: {
-                    page: 7,
+                    branch: "2",
                   },
                 },
               ],
@@ -62,22 +62,22 @@ const data = [
             {
               index: 5,
               branch: "1",
-              pic: "url(/stories/001/ch01/v3_005.png)",
+              pic: "url(/stories/001/ch01/v3_001.png)",
             },
             {
               index: 6,
               branch: "1",
-              pic: "url(/stories/001/ch01/v3_006.png)",
+              pic: "url(/stories/001/ch01/v3_002.png)",
             },
             {
               index: 7,
               branch: "2",
-              pic: "url(/stories/001/ch01/v3_007.png)",
+              pic: "url(/stories/001/ch01/v3_003.png)",
             },
             {
               index: 8,
               branch: "2",
-              pic: "url(/stories/001/ch01/v3_008.png)",
+              pic: "url(/stories/001/ch01/v3_004.png)",
             },
           ],
         },

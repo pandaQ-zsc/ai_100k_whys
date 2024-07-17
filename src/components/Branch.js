@@ -1,10 +1,10 @@
 import classnames from "classnames";
-import styles from "./Story.module.css";
+import styles from "./Branch.module.css";
 import $ from "jquery";
 import Turn from "./Turn";
 import books from "../books";
 import { Fragment, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const options = {
   width: 1080,
@@ -22,8 +22,10 @@ const options = {
   },
 };
 
-export default function Story() {
-  const navigate = useNavigate();
+export default function Branch() {
+  // Get the userId param from the URL.
+  const { id } = useParams();
+
   const [frames, setFrames] = useState([]);
   const [coverPage, setCoverPage] = useState("");
   const [backPage, setBackPage] = useState("");
@@ -31,16 +33,15 @@ export default function Story() {
   useEffect(() => {
     const book = books.find(1);
     const story = book.stories[0];
-    const pages = story.pages.filter((s) => s.branch === "default");
+    const pages = story.pages.filter((s) => s.branch === id);
     setFrames(pages);
     setCoverPage(book.cover_page);
     setBackPage(book.back_page);
-    console.log("effect:" + pages);
-  }, []);
+  }, [id]);
 
   return (
-    <div className={styles.story}>
-      <div className={styles.storyContent}>
+    <div className={styles.branch}>
+      <div className={styles.branchContent}>
         {frames.length > 0 && (
           <Turn options={options} className="magazine">
             {coverPage && (
@@ -69,28 +70,6 @@ export default function Story() {
                     className={classnames(styles.page, styles.page_right)}
                     style={{ backgroundImage: page.pic }}
                   ></div>
-                  {page.switch && page.switch.length > 0 && (
-                    <div className={styles.switch}>
-                      {page.switch.map((s, i) => (
-                        <div
-                          key={i}
-                          className={classnames(
-                            "rounded-full",
-                            "text-3xl",
-                            "text-center",
-                            styles.switchItem
-                          )}
-                          onClick={() => {
-                            navigate(
-                              `/books/1/stories/1/branch/${s.goto.branch}`
-                            );
-                          }}
-                        >
-                          {s.q}
-                        </div>
-                      ))}
-                    </div>
-                  )}
                 </div>
               </Fragment>
             ))}

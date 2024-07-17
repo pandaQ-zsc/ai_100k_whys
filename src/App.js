@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Recent from "./components/Recent";
 import Book from "./components/Book";
 import Story from "./components/Story";
+import Branch from "./components/Branch";
 
 export default function App() {
   /* Routes nest inside one another. Nested route paths build upon
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="recent" element={<Recent />} />
         <Route path="books/:id" element={<Book />} />
         <Route path="books/:bookId/stories/:id" element={<Story />} />
+        <Route path="books/:bid/stories/:sid/branch/:id" element={<Branch />} />
 
         {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
