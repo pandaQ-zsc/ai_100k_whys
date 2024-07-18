@@ -19,7 +19,7 @@ export default function Login() {
             </div>
             <span className={classNames("text-xl")}>儿童</span>
           </div>
-          <div className={styles.iconLink} onClick={() => navigate("/landing")}>
+          <div className={styles.iconLink} onClick={() => navigate("/parent")}>
             <div
               className={classNames(
                 styles.parent,

@@ -41,7 +41,7 @@ export default function Home() {
             <span className={styles.top_link_text}>我的徽章</span>
           </div>
         </div>
-        <div className={classNames('shadow-md','rounded-lg', styles.top_link)}>
+        <div className={classNames('shadow-md','rounded-lg', styles.top_link)} onClick={() => navigate("/bookstore")}>
           <div className={styles.top_link_icon}>
             <img
               src={v3_778}
@@ -54,7 +54,7 @@ export default function Home() {
             <span className={styles.top_link_text}>书城</span>
           </div>
         </div>
-        <div className={classNames('shadow-md','rounded-lg', styles.top_link)}>
+        <div className={classNames('shadow-md','rounded-lg', styles.top_link)} onClick={() => navigate("/bookstore")}>
           <div className={styles.top_link_icon}>
             <img
               src={v3_782}

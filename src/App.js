@@ -7,6 +7,8 @@ import Book from "./components/Book";
 import Story from "./components/Story";
 import Branch from "./components/Branch";
 import Login from "./components/Login";
+import BookStore from "./components/BookStore";
+import ParentAccount from "./components/ParentAccount";
 
 export default function App() {
   /* Routes nest inside one another. Nested route paths build upon
@@ -18,6 +20,8 @@ export default function App() {
         <Route index element={<Login />} />
         <Route path="landing" element={<Landing />} />
         <Route path="home" element={<Home />} />
+        <Route path="bookstore" element={<BookStore />} />
+        <Route path="parent" element={<ParentAccount />} />
         <Route path="books/:id" element={<Book />} />
         <Route path="books/:bookId/stories/:id" element={<Story />} />
         <Route path="books/:bid/stories/:sid/branch/:id" element={<Branch />} />

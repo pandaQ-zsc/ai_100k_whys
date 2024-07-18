@@ -1,0 +1,23 @@
+.account {
+  width: 1080px;
+  height: 607px;
+  background: rgba(255, 250, 137, 1);
+  text-align: center;
+}
+
+.accountIcon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  overflow: hidden;
+  left: 30px;
+  top: 30px;
+}
+.accountIconBg {
+  width: 60px;
+  height: 60px;
+  background-color: #b7c26e;
+  position: relative;
+  border-radius: 50%;
+  padding: 8px 5px;
+}
