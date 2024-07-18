@@ -1,52 +1,145 @@
 import styles from "./Home.module.css";
-import homeLeft from "../imgs/home_left.png";
-import homeMid from "../imgs/home_mid.png";
-import homeRight from "../imgs/home_right.png";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import classNames from "classnames";
+import v3_769 from "../imgs/v3_769.png";
+import v3_774 from "../imgs/v3_774.png";
+import v3_778 from "../imgs/v3_778.png";
+import v3_782 from "../imgs/v3_782.png";
+import v3_786 from "../imgs/v3_786.png";
+
+import v3_787 from "../imgs/v3_787.png";
+import v3_804 from "../imgs/v3_804.png";
+import v3_808 from "../imgs/v3_808.png";
+import v3_809 from "../imgs/v3_809.png";
+
 
 export default function Home() {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    console.log("navigate");
-    setTimeout(() => navigate("/recent"), 2000);
-  }, [navigate]);
-
   return (
     <div className={styles.home}>
-      <p className={styles.title}>欢迎来到 “万问奇遇”</p>
-      <div className={styles.imgs}>
-        <img
-          className={styles.img_left}
-          src={homeLeft}
-          alt="home_left"
-          width="225px"
-          height="auto"
-        />
-        <img
-          className={styles.img_mid}
-          src={homeMid}
-          alt="home_mid"
-          width="250px"
-          height="auto"
-        />
-        <img
-          className={styles.img_right}
-          src={homeRight}
-          alt="home_right"
-          width="225px"
-          height="auto"
-        />
+      <div className={styles.topBar}>
+        <div className={styles.v3_767}>
+          <div className={classNames('shadow-md',styles.v3_768)}>
+            <img
+              src={v3_769}
+              alt="v3_769"
+              width="50px"
+              height="auto"
+            />
+          </div>
+        </div>
+        <div className={classNames('shadow-md','rounded-lg',styles.top_link)}>
+          <div className={styles.top_link_icon}>
+            <img
+              src={v3_774}
+              alt="v3_774"
+              width="65px"
+              height="auto"
+            />
+          </div>
+          <div className={styles.top_link_bg}>
+            <span className={styles.top_link_text}>我的徽章</span>
+          </div>
+        </div>
+        <div className={classNames('shadow-md','rounded-lg', styles.top_link)}>
+          <div className={styles.top_link_icon}>
+            <img
+              src={v3_778}
+              alt="v3_778"
+              width="65px"
+              height="auto"
+            />
+          </div>
+          <div className={styles.top_link_bg}>
+            <span className={styles.top_link_text}>书城</span>
+          </div>
+        </div>
+        <div className={classNames('shadow-md','rounded-lg', styles.top_link)}>
+          <div className={styles.top_link_icon}>
+            <img
+              src={v3_782}
+              alt="v3_782"
+              width="65px"
+              height="auto"
+            />
+          </div>
+          <div className={styles.top_link_bg}>
+            <span className={styles.top_link_text}>书架</span>
+          </div>
+        </div>
+        <div className={classNames('shadow-md','rounded-lg', styles.top_link)}>
+          <div className={styles.top_link_icon}>
+            <img
+              src={v3_786}
+              alt="v3_786"
+              width="65px"
+              height="auto"
+            />
+          </div>
+          <div className={styles.top_link_bg}>
+            <span className={styles.top_link_text}>知识卡片</span>
+          </div>
+        </div>
       </div>
-      <div className={styles.progressbar}>
-        <div className="relative mb-5">
-          <div className="rounded-full border border-red-500 p-1">
+      <div className={styles.bottom}>
+        <div className={styles.mascot}>
+          <img
+            src={v3_787}
+            alt="v3_787"
+            width="350px"
+            height="auto"
+          />
+        </div>
+        <div className={styles.bookNav}>
+          <h3 className={classNames("text-2xl", styles.navTitle)}>最近阅读</h3>
+          <div className={styles.navItems}>
             <div
-              className="flex h-6 items-center justify-center rounded-full bg-red-300 text-xs leading-none"
-              style={{ width: "85%", height: "85%" }}
+              className={classNames(styles.navItem, styles.navItem_01)}
+              onClick={() => navigate("/books/1")}
             >
-              <span className="p-1 text-white">85%</span>
+              <div className={styles.navItemIcon}>
+                <img
+                  src={v3_804}
+                  alt="v3_804"
+                  width="120px"
+                  height="auto"
+                />
+              </div>
+              <div className={styles.navItemTitle}>
+                <span className={styles.navItemTitleText}>植物宝藏</span>
+              </div>
+            </div>
+            <div
+              className={classNames(styles.navItem, styles.navItem_02)}
+              onClick={() => navigate("/books/2")}
+            >
+              <div className={styles.navItemIcon}>
+                <img
+                  src={v3_808}
+                  alt="v3_808"
+                  width="120px"
+                  height="auto"
+                />
+              </div>
+              <div className={styles.navItemTitle}>
+                <span className={styles.navItemTitleText}>动物世界</span>
+              </div>
+            </div>
+            <div
+              className={classNames(styles.navItem, styles.navItem_03)}
+              onClick={() => navigate("/books/3")}
+            >
+              <div className={styles.navItemIcon}>
+                <img
+                  src={v3_809}
+                  alt="v3_809"
+                  width="120px"
+                  height="auto"
+                />
+              </div>
+              <div className={styles.navItemTitle}>
+                <span className={styles.navItemTitleText}>星球冒险</span>
+              </div>
             </div>
           </div>
         </div>

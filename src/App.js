@@ -2,10 +2,11 @@ import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
-import Recent from "./components/Recent";
+import Landing from "./components/Landing";
 import Book from "./components/Book";
 import Story from "./components/Story";
 import Branch from "./components/Branch";
+import Login from "./components/Login";
 
 export default function App() {
   /* Routes nest inside one another. Nested route paths build upon
@@ -14,8 +15,9 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="recent" element={<Recent />} />
+        <Route index element={<Login />} />
+        <Route path="landing" element={<Landing />} />
+        <Route path="home" element={<Home />} />
         <Route path="books/:id" element={<Book />} />
         <Route path="books/:bookId/stories/:id" element={<Story />} />
         <Route path="books/:bid/stories/:sid/branch/:id" element={<Branch />} />

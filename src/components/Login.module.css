@@ -1,0 +1,40 @@
+.bg {
+    width: 1080px;
+    height: 607px;
+    background: rgba(255,250,137,1);
+}
+.title {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 60px;
+}
+.container {
+    width: 450px;
+    margin: auto;
+    padding-top: 80px;
+}
+.login {
+    display: flex;
+    justify-content: space-between;
+}
+.iconLink {
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+.iconBg {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    padding: 30px;
+}
+.kid {
+    background-color: rgba(255, 212, 173, 1);
+}
+.parent {
+    background-color: #b7c26e;
+}
+
+.iconBg:hover {
+    padding: 20px;
+}
