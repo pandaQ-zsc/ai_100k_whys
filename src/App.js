@@ -3,12 +3,12 @@ import { Routes, Route, Link } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Landing from "./components/Landing";
-import Book from "./components/Book";
-import Story from "./components/Story";
-import Branch from "./components/Branch";
 import Login from "./components/Login";
 import BookStore from "./components/BookStore";
 import ParentAccount from "./components/ParentAccount";
+import Book from "./components/Book/Index";
+import Story from "./components/Book/Story"
+import Frame from "./components/Book/Frame";
 
 export default function App() {
   /* Routes nest inside one another. Nested route paths build upon
@@ -24,7 +24,7 @@ export default function App() {
         <Route path="parent" element={<ParentAccount />} />
         <Route path="books/:id" element={<Book />} />
         <Route path="books/:bookId/stories/:id" element={<Story />} />
-        <Route path="books/:bid/stories/:sid/branch/:id" element={<Branch />} />
+        <Route path="books/:bookId/stories/:storyId/frames" element={<Frame />} />
 
         {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit

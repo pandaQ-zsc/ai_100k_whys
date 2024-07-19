@@ -9,6 +9,9 @@ export default function Turn(props) {
     if (fadeClass) {
       console.log($(fadeClass).turn);
       $(fadeClass).turn(Object.assign({}, props.options));
+      if (props.onInit) {
+        props.onInit($(fadeClass));
+      }
     }
     // 	//   document.addEventListener("keydown", handleKeyDown, false);
   }, [props.options]);
