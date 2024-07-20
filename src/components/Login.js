@@ -1,7 +1,8 @@
 import styles from "./Login.module.css";
 import { useNavigate } from "react-router-dom";
 import classNames from "classnames";
-import v3_769 from "../imgs/v3_769.png";
+import kidAcc from "../imgs/kid_acc.png";
+import parentAcc from "../imgs/parent_acc.png";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function Login() {
             <div
               className={classNames(styles.kid, styles.iconBg, "rounded-full",'shadow-lg')}
             >
-              <img src={v3_769} alt="v3_769" width="auto" height="auto" />
+              <img src={kidAcc} alt="kidAcc" width="auto" height="auto" />
             </div>
             <span className={classNames("text-xl")}>儿童</span>
           </div>
@@ -27,7 +28,7 @@ export default function Login() {
                 "rounded-full",'shadow-lg'
               )}
             >
-              <img src={v3_769} alt="v3_769" width="auto" height="auto" />
+              <img src={parentAcc} alt="parentAcc" width="auto" height="auto" />
             </div>
             <span className={classNames("text-xl")}>家长</span>            
           </div>

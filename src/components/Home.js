@@ -1,7 +1,7 @@
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 import classNames from "classnames";
-import v3_769 from "../imgs/v3_769.png";
+import kidAcc from "../imgs/kid_acc.png";
 import v3_774 from "../imgs/v3_774.png";
 import v3_778 from "../imgs/v3_778.png";
 import v3_782 from "../imgs/v3_782.png";
@@ -21,9 +21,9 @@ export default function Home() {
         <div className={styles.v3_767}>
           <div className={classNames('shadow-md',styles.v3_768)}>
             <img
-              src={v3_769}
-              alt="v3_769"
-              width="50px"
+              src={kidAcc}
+              alt="kidAcc"
+              width="100%"
               height="auto"
             />
           </div>

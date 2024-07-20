@@ -6,6 +6,8 @@ import books from "../../books";
 import { Fragment, useEffect, useState, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import nextStoryIcon from "../../imgs/v6_1777.png";
+import kbIcon from "../../imgs/kb_001.png";
+import playBtnIcon from "../../imgs/play-audio.png";
 
 const options = {
   width: 1080,
@@ -52,6 +54,8 @@ export default function Frame() {
   const story = book.stories.find((s) => s.index === parseInt(storyId));
   const frames = story.pages;
 
+  let audio = useRef(null);
+  let audioCtrl = useRef(null);
   let turnRef = { turn: () => {} };
   let currentBranch = DefaultBranch;
   const branchIdx = [];
@@ -97,6 +101,12 @@ export default function Frame() {
           }
           return true;
         },
+        turning: async function (e, curr, view) {
+          console.log("turning");
+          if (audio) {
+            await audio.pause();
+          }
+        },
         turned: function (e, curr, view) {
           console.log("Current view:", view);
         },
@@ -133,6 +143,26 @@ export default function Frame() {
                     className={classnames(styles.page, styles.page_right)}
                     style={{ backgroundImage: page.pic }}
                   ></div>
+                  {page.audio && (
+                    <div
+                      className={classnames(styles.playBtnIcon)}
+                      onClick={async () => {
+                        const m = /^url\((.+?)\)$/.exec(page.audio);
+                        if (m && audio) {
+                          //await audio.pause();
+                          audio.src = m[1]
+                          await audio.play();
+                        }
+                      }}
+                    >
+                      <img
+                        src={playBtnIcon}
+                        alt="play"
+                        width="100%"
+                        height="auto"
+                      />
+                    </div>
+                  )}
                   {page.switch && page.switch.length > 0 && (
                     <div className={styles.switch}>
                       {page.switch.map((s, i) => (
@@ -163,16 +193,30 @@ export default function Frame() {
             ))}
             <div className={classnames("page", styles.sp_page)}>
               <div
-                className={classnames(styles.page, styles.page_left)}
-                style={{ backgroundImage: "url(/learning_stat.png)" }}
-              ></div>
+                className={classnames(styles.navItem)}
+                onClick={() => navigate("/books/2")}
+              >
+                <div className={styles.navItemIcon}>
+                  <img src={kbIcon} alt="kbIcon" width="100%" height="auto" />
+                </div>
+                <div className={styles.navItemTitle}>
+                  <span className={styles.navItemTitleText}>知识卡片</span>
+                </div>
+              </div>
             </div>
             <div className={classnames("page", styles.sp_page)}>
+              <div className={styles.kb}>
+                <h1>{story.knowledge.title}</h1>
+                <p>{story.knowledge.content}</p>
+              </div>
               <div
-                className={classnames(styles.page, styles.page_right)}
-                style={{ backgroundImage: "url(/learning_stat.png)" }}
-              ></div>
-              <div className={classnames('shadow-md','rounded-lg', styles.nextStory)} onClick={() => navigate(-1)}>
+                className={classnames(
+                  "shadow-md",
+                  "rounded-lg",
+                  styles.nextStory
+                )}
+                onClick={() => navigate(-1)}
+              >
                 <img
                   src={nextStoryIcon}
                   width="60px"
@@ -185,6 +229,12 @@ export default function Frame() {
           </Turn>
         )}
       </div>
+      <audio
+        ref={(e) => {
+          audio = e;
+        }}
+        src="/data/books/book_1/chapter_1/story_1/6.mp3"
+      />
     </div>
   );
 }

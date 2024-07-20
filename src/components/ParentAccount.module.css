@@ -1,7 +1,7 @@
 .account {
   width: 1080px;
   height: 607px;
-  background: rgba(255, 250, 137, 1);
+  background-color: #dbff76;
   text-align: center;
 }
 
@@ -20,4 +20,15 @@
   position: relative;
   border-radius: 50%;
   padding: 8px 5px;
+}
+.settings {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.stat {
+  padding-top: 80px;
 }
