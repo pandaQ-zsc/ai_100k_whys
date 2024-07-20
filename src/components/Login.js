@@ -12,7 +12,7 @@ export default function Login() {
       <p className={styles.title}>欢迎来到 “万问奇遇”</p>
       <div className={styles.container}>
         <div className={styles.login}>
-          <div className={styles.iconLink} onClick={() => navigate("/landing")}>
+          <div className={styles.iconLink} onClick={() => navigate("/landing", {replace:true})}>
             <div
               className={classNames(styles.kid, styles.iconBg, "rounded-full",'shadow-lg')}
             >
@@ -20,7 +20,7 @@ export default function Login() {
             </div>
             <span className={classNames("text-xl")}>儿童</span>
           </div>
-          <div className={styles.iconLink} onClick={() => navigate("/parent")}>
+          <div className={styles.iconLink} onClick={() => navigate("/parent", {replace:true})}>
             <div
               className={classNames(
                 styles.parent,

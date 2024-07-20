@@ -48,14 +48,14 @@ function findLastPage(branchIdx, name, defaultPage) {
 
 const DefaultBranch = "default";
 export default function Frame() {
-  const { bookId, storyId } = useParams();
+  const { bookId, chapterId, id } = useParams();
   const navigate = useNavigate();
   const book = books.find(bookId);
-  const story = book.stories.find((s) => s.index === parseInt(storyId));
+  const stories = book.stories.filter((s) => s.chapter === parseInt(chapterId));
+  const story = stories.find((s) => s.index === parseInt(id));
   const frames = story.pages;
 
   let audio = useRef(null);
-  let audioCtrl = useRef(null);
   let turnRef = { turn: () => {} };
   let currentBranch = DefaultBranch;
   const branchIdx = [];
@@ -150,7 +150,7 @@ export default function Frame() {
                         const m = /^url\((.+?)\)$/.exec(page.audio);
                         if (m && audio) {
                           //await audio.pause();
-                          audio.src = m[1]
+                          audio.src = m[1];
                           await audio.play();
                         }
                       }}
@@ -170,7 +170,7 @@ export default function Frame() {
                           key={i}
                           className={classnames(
                             "rounded-full",
-                            "text-3xl",
+                            "text-2xl",
                             "text-center",
                             styles.switchItem
                           )}
@@ -215,7 +215,13 @@ export default function Frame() {
                   "rounded-lg",
                   styles.nextStory
                 )}
-                onClick={() => navigate(-1)}
+                onClick={() => {
+                  let nextIndex = stories.findIndex(s => s.index === story.index) + 1;
+                  if (nextIndex < stories.length) {
+                    stories[nextIndex].unlocked = true;
+                  }
+                  navigate(-1);
+                }}
               >
                 <img
                   src={nextStoryIcon}

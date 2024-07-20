@@ -1,9 +1,9 @@
-import styles from "./PlayBtn.module.css";
+import styles from "./PlayBtnLite.module.css";
 import classNames from "classnames";
 import playIcon from "../imgs/book-play.png";
 import lockIcon from "../imgs/book-lock.png";
 
-export default function PlayBtn({
+export default function PlayBtnLite({
   title,
   locked,
   className,

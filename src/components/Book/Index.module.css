@@ -7,8 +7,9 @@
 .content {
   width: 1080px;
   height: 607px;
-  background-image: url(../../imgs/roadmap_sd.png);
+  background-image: url(../../imgs/star_chapters_rm.png);
   position: relative;
+  background-size: 1110px;
   background-repeat: no-repeat;
   background-position: center;
 }

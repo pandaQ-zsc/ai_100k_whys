@@ -1,11 +1,9 @@
-import styles from "./BookStore.module.css";
-import { useNavigate } from "react-router-dom";
+import styles from "./Bookstore.module.css";
 
-export default function BookStore() {
-  const navigate = useNavigate();
+export default function Bookstore() {
   return (
-    <div className={styles.store}>
-      <h1>书架</h1>
+    <div className={styles.bg}>
+      <div className={styles.bgImg} style={{ backgroundImage: "url(/imgs/bookstore.png)" }}></div>
     </div>
   );
 }

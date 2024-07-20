@@ -10,7 +10,7 @@ export default function Landing() {
 
   useEffect(() => {
     console.log("navigate");
-    setTimeout(() => navigate("/home"), 2000);
+    setTimeout(() => navigate("/home", { replace: true }), 1500);
   }, [navigate]);
 
   return (

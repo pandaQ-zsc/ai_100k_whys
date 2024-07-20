@@ -4,7 +4,10 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Landing from "./components/Landing";
 import Login from "./components/Login";
-import BookStore from "./components/BookStore";
+import Bookstore from "./components/Bookstore";
+import Bookshelf from "./components/Bookshelf";
+import MyBadge from "./components/MyBadge";
+import KbCard from "./components/KbCard";
 import ParentAccount from "./components/ParentAccount";
 import Book from "./components/Book/Index";
 import Story from "./components/Book/Story"
@@ -20,11 +23,14 @@ export default function App() {
         <Route index element={<Login />} />
         <Route path="landing" element={<Landing />} />
         <Route path="home" element={<Home />} />
-        <Route path="bookstore" element={<BookStore />} />
+        <Route path="bookstore" element={<Bookstore />} />
+        <Route path="bookshelf" element={<Bookshelf />} />
+        <Route path="kb" element={<KbCard />} />
+        <Route path="badge" element={<MyBadge />} />
         <Route path="parent" element={<ParentAccount />} />
         <Route path="books/:id" element={<Book />} />
         <Route path="books/:bookId/stories/:id" element={<Story />} />
-        <Route path="books/:bookId/stories/:storyId/frames" element={<Frame />} />
+        <Route path="books/:bookId/stories/:chapterId/frames/:id" element={<Frame />} />
 
         {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
