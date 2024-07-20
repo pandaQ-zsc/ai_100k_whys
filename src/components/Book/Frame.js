@@ -3,7 +3,7 @@ import styles from "./Frame.module.css";
 import Turn from "../Turn";
 import $ from "jquery";
 import books from "../../books";
-import { Fragment, useEffect, useState, useRef } from "react";
+import { Fragment, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import nextStoryIcon from "../../imgs/v6_1777.png";
 import kbIcon from "../../imgs/kb_001.png";

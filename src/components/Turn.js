@@ -7,7 +7,7 @@ export default function Turn(props) {
 
   useEffect(() => {
     if (fadeClass) {
-      console.log($(fadeClass).turn);
+      //console.log($(fadeClass).turn);
       $(fadeClass).turn(Object.assign({}, props.options));
       if (props.onInit) {
         props.onInit($(fadeClass));
