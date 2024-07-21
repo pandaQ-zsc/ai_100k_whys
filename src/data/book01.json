@@ -150,14 +150,14 @@
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_1/5.mp3)",
                     "text": "系统综合各方面数据,模拟计算出了与古人相近的测量结果。孩子们对古人的智慧和先见之明感到无比敬佩。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_1/6.mp3)",
                     "text": "测量的过程中发现一些神秘的古老雕刻符号。他们决定继续探索下去。"
@@ -171,14 +171,14 @@
                 },
                 {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_1/5.mp3)",
                     "text": "系统综合各方面数据,模拟计算出了与古人相近的测量结果。孩子们对古人的智慧和先见之明感到无比敬佩。"
                 },
                 {
                     "index": 8,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_1/6.mp3)",
                     "text": "测量的过程中发现一些神秘的古老雕刻符号。他们决定继续探索下去。"
@@ -231,14 +231,14 @@
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_2/4.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_2/4.mp3)",
                     "text": "可可解释说，因为南极洲极度干燥寒冷，陨石不会遭受严重的风化作用，所以保存得很好。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_2/5.mp3)",
                     "text": "老人最后透露，雕刻符号上隐藏着关于地球生命的重大秘密，孩子们必须继续追查。"
@@ -298,21 +298,21 @@
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_3/4.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_3/4.mp3)",
                     "text": "画面呈现出地球上多种生态环境的景象,包括森林、河流、峡谷、冰川等。各种生物在其中生存繁衍。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_3/5.mp3)",
                     "text": "场景突然转换到一个古老的天文台内,四周布满了神秘的雕像和仪器。一尊巨大的雕像矗立在中央,似乎正注视着什么。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_3/6.mp3)",
                     "text": "场景中央是一个巨大的雕像,雕像上布满了奇特的符号。可可正在操作\"星际分析仪\"解读符号,爱爱则通过\"宇宙共情力\"与雕像沟通。"
@@ -326,21 +326,21 @@
                 },
                 {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_3/4.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_3/4.mp3)",
                     "text": "画面呈现出地球上多种生态环境的景象,包括森林、河流、峡谷、冰川等。各种生物在其中生存繁衍。"
                 },
                 {
                     "index": 8,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_3/5.mp3)",
                     "text": "场景突然转换到一个古老的天文台内,四周布满了神秘的雕像和仪器。一尊巨大的雕像矗立在中央,似乎正注视着什么。"
                 },
                 {
                     "index": 9,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_3/6.mp3)",
                     "text": "场景中央是一个巨大的雕像,雕像上布满了奇特的符号。可可正在操作\"星际分析仪\"解读符号,爱爱则通过\"宇宙共情力\"与雕像沟通。"
@@ -386,21 +386,21 @@
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_4/4.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_4/4.mp3)",
                     "text": "老天文学家向孩子们介绍了古希腊天文学家阿利斯塔克的故事。阿利斯塔克通过巧妙的测量方法,首次测算出了日、地、月三者的大小比例,被后人誉为\"古代的哥白尼\"。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_4/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_4/5.mp3)",
                     "text": "天文学家解开了一个令人费解的谜题:为什么太阳和月亮在地球上看起来差不多一样大?原来这都要归功于它们与地球的恰当位置和距离。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_4/6.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_4/6.mp3)",
                     "text": "天文学家向孩子们展示了一台神秘的未来窥视装置。孩子们兴奋万分,只见装置中出现了地球未来的场景…"
@@ -414,21 +414,21 @@
                 },
                 {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_4/4.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_4/4.mp3)",
                     "text": "老天文学家向孩子们介绍了古希腊天文学家阿利斯塔克的故事。阿利斯塔克通过巧妙的测量方法,首次测算出了日、地、月三者的大小比例,被后人誉为\"古代的哥白尼\"。"
                 },
                 {
                     "index": 8,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_4/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_4/5.mp3)",
                     "text": "天文学家解开了一个令人费解的谜题:为什么太阳和月亮在地球上看起来差不多一样大?原来这都要归功于它们与地球的恰当位置和距离。"
                 },
                 {
                     "index": 9,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_4/6.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_4/6.mp3)",
                     "text": "天文学家向孩子们展示了一台神秘的未来窥视装置。孩子们兴奋万分,只见装置中出现了地球未来的场景…"
@@ -474,21 +474,21 @@
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_5/4.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_5/4.mp3)",
                     "text": "正当孩子们兴致勃勃探讨时, 可可突然发现一座半埋于地下的古老太空发射塔。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_5/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_5/5.mp3)",
                     "text": "孩子们利用航天知识成功修复火箭，乘坐火箭在宇宙中畅游，一路上了解流浪星星的梦想和故事。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_5/6.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_5/6.mp3)",
                     "text": "孩子们最终抵达月球，发现了神秘的月球文明遗迹，决心揭开月球的神秘面纱。"
@@ -502,21 +502,21 @@
                 },
                 {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_5/4.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_5/4.mp3)",
                     "text": "正当孩子们兴致勃勃探讨时, 可可突然发现一座半埋于地下的古老太空发射塔。"
                 },
                 {
                     "index": 8,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_5/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_5/5.mp3)",
                     "text": "孩子们利用航天知识成功修复火箭，乘坐火箭在宇宙中畅游，一路上了解流浪星星的梦想和故事。"
                 },
                 {
                     "index": 9,
-                    "branch": "default",
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_5/6.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_5/6.mp3)",
                     "text": "孩子们最终抵达月球，发现了神秘的月球文明遗迹，决心揭开月球的神秘面纱。"
