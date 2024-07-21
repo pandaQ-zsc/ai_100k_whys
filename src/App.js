@@ -9,9 +9,9 @@ import Bookshelf from "./components/Bookshelf";
 import MyBadge from "./components/MyBadge";
 import KbCard from "./components/KbCard";
 import ParentAccount from "./components/ParentAccount";
-import Book from "./components/Book/Index";
-import Story from "./components/Book/Story"
-import Frame from "./components/Book/Frame";
+import Book from "./components/book/Index";
+import Story from "./components/book/Story"
+import Frame from "./components/book/Frame";
 
 export default function App() {
   /* Routes nest inside one another. Nested route paths build upon

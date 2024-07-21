@@ -2,7 +2,7 @@ import classnames from "classnames";
 import styles from "./Frame.module.css";
 import Turn from "../Turn";
 import $ from "jquery";
-import books from "../../books";
+import books from "../../data";
 import { Fragment, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import nextStoryIcon from "../../imgs/v6_1777.png";
