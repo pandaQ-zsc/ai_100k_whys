@@ -217,7 +217,7 @@
                         {
                             "q": "可可和爱爱不去挖矿",
                             "goto": {
-                                "branch": "default"
+                                "branch": "2"
                             }
                         }
                     ]
@@ -232,27 +232,20 @@
                 {
                     "index": 4,
                     "branch": "1",
-                    "pic": "url(/data/books/book_1/chapter_1/story_2/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_1/story_2/4.mp3)",
-                    "text": "可可解释说，因为南极洲极度干燥寒冷，陨石不会遭受严重的风化作用，所以保存得很好。"
-                },
-                {
-                    "index": 5,
-                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_1/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_2/5.mp3)",
                     "text": "老人最后透露，雕刻符号上隐藏着关于地球生命的重大秘密，孩子们必须继续追查。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_2/4.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_2/4.mp3)",
                     "text": "可可解释说，因为南极洲极度干燥寒冷，陨石不会遭受严重的风化作用，所以保存得很好。"
                 },
                 {
-                    "index": 7,
-                    "branch": "default",
+                    "index": 6,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_1/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_1/story_2/5.mp3)",
                     "text": "老人最后透露，雕刻符号上隐藏着关于地球生命的重大秘密，孩子们必须继续追查。"
@@ -544,32 +537,60 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_2/story_1/2.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_1/2.mp3)",
-                    "text": "发射塔内部，光线昏黄，机械零件散落各处，可可专注地操作着复杂机械，爱爱闭眼沉思，与AI交流。"
+                    "text": "发射塔内部，光线昏黄，机械零件散落各处，可可专注地操作着复杂机械，爱爱闭眼沉思，与AI交流。",
+                    "switch": [
+                        {
+                            "q": "选择夜间发射火箭",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "选择白天发射火箭",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_2/story_1/3.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_1/3.mp3)",
                     "text": "夜晚，火箭在星空下腾空而起，舱内可可和爱爱身着宇航服，兴奋地望向窗外变化的月相。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_2/story_1/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_2/story_1/4.mp3)",
-                    "text": "白天，火箭在明亮的阳光下显得格外耀眼，舱内可可操作平板展示数据，爱爱认真倾听。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_2/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_1/5.mp3)",
                     "text": "虚拟现实体验中，可可和爱爱穿着VR眼镜，模拟行走在月球表面，背景是模拟出的月岩和环形山。"
                 },
                 {
+                    "index": 5,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_2/story_1/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_2/story_1/6.mp3)",
+                    "text": "月球表面，背景是宁静的月球景观，着陆器略有损伤，可可正在紧急修复，爱爱与月球微生物互动。"
+                },
+                {
                     "index": 6,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_2/story_1/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_2/story_1/4.mp3)",
+                    "text": "白天，火箭在明亮的阳光下显得格外耀眼，舱内可可操作平板展示数据，爱爱认真倾听。"
+                },
+                {
+                    "index": 7,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_2/story_1/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_2/story_1/5.mp3)",
+                    "text": "虚拟现实体验中，可可和爱爱穿着VR眼镜，模拟行走在月球表面，背景是模拟出的月岩和环形山。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_2/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_1/6.mp3)",
                     "text": "月球表面，背景是宁静的月球景观，着陆器略有损伤，可可正在紧急修复，爱爱与月球微生物互动。"
@@ -597,32 +618,60 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_2/story_2/2.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_2/2.mp3)",
-                    "text": "月球表面，灰色尘埃覆盖，远处是起伏的山丘，火箭倾斜着陆，周围散落着小石头。"
+                    "text": "月球表面，灰色尘埃覆盖，远处是起伏的山丘，火箭倾斜着陆，周围散落着小石头。",
+                    "switch": [
+                        {
+                            "q": "修理通信设备求援",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "尝试与月球未知生命体交流",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_2/story_2/3.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_2/3.mp3)",
                     "text": "火箭内部，闪烁的电子设备，可可埋头于线路板，爱爱站在旁边，指着窗外的环形山。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_2/story_2/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_2/story_2/4.mp3)",
-                    "text": "月岩石缝间，爱爱弯腰观察，手电筒照出水冰的微光，微生物围绕在她身边，友好互动。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_2/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_2/5.mp3)",
                     "text": "月海宽广，亚平宁山脉耸立，可可和爱爱并肩而行，爱爱似乎在聆听月岩。"
                 },
                 {
+                    "index": 5,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_2/story_2/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_2/story_2/6.mp3)",
+                    "text": "神秘月球基地入口，门开启，幽光中透露出内部结构，可可和爱爱手牵手准备进入。"
+                },
+                {
                     "index": 6,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_2/story_2/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_2/story_2/4.mp3)",
+                    "text": "月岩石缝间，爱爱弯腰观察，手电筒照出水冰的微光，微生物围绕在她身边，友好互动。"
+                },
+                {
+                    "index": 7,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_2/story_2/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_2/story_2/5.mp3)",
+                    "text": "月海宽广，亚平宁山脉耸立，可可和爱爱并肩而行，爱爱似乎在聆听月岩。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_2/story_2/6.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_2/6.mp3)",
                     "text": "神秘月球基地入口，门开启，幽光中透露出内部结构，可可和爱爱手牵手准备进入。"
@@ -655,26 +704,12 @@
                 {
                     "index": 3,
                     "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_2/story_3/3.png)",
-                    "audio": "url(/data/books/book_1/chapter_2/story_3/3.mp3)",
-                    "text": "冷冻室内部，蓝色冷光照射着透明的水冰样本容器，可可兴奋地操作着控制面板，容器周围是复杂的冷冻设备。"
-                },
-                {
-                    "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_2/story_3/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_2/story_3/4.mp3)",
-                    "text": "机器人休眠室，昏暗的灯光下，一台锈迹斑斑的机器人孤独地坐在角落，爱爱轻抚其外壳，可可正忙碌地连接电线。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_2/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_3/5.mp3)",
                     "text": "可可和爱爱站在基地地图前，地图上标示着一条通往永久阴影区的路线，两人眼神中充满期待，身后是基地内的复杂机械结构。"
                 },
                 {
-                    "index": 6,
+                    "index": 4,
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_2/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_2/story_3/6.mp3)",
@@ -703,39 +738,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_3/story_1/2.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_1/2.mp3)",
-                    "text": "飞船驾驶舱内部,可看到控制台和窗外的星空。"
+                    "text": "飞船驾驶舱内部,可看到控制台和窗外的星空。",
+                    "switch": [
+                        {
+                            "q": "先探索卫星",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "直接去火星",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_1/3.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_1/3.mp3)",
                     "text": "小卫星陆地景观,有小山丘、溪流、树木和奇异的生物。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_3/story_1/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_3/story_1/4.mp3)",
-                    "text": "火星表面景观,有环形山、陨石坑、沙丘等地貌。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_1/5.mp3)",
                     "text": "火星地平线,有奇特的山峰、大气层和两个落日。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_1/6.mp3)",
                     "text": "火星峡谷地貌,有奇形怪状的岩石。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_3/story_1/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_1/7.mp3)",
+                    "text": "飞船驾驶舱内,可看到操作台和飞船外的星空。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_1/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_1/4.mp3)",
+                    "text": "火星表面景观,有环形山、陨石坑、沙丘等地貌。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_1/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_1/5.mp3)",
+                    "text": "火星地平线,有奇特的山峰、大气层和两个落日。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_1/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_1/6.mp3)",
+                    "text": "火星峡谷地貌,有奇形怪状的岩石。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_3/story_1/7.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_1/7.mp3)",
                     "text": "飞船驾驶舱内,可看到操作台和飞船外的星空。"
@@ -763,39 +833,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_3/story_2/2.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_2/2.mp3)",
-                    "text": "木星大气层环境,气体漩涡环绕,晕彩色云层。"
+                    "text": "木星大气层环境,气体漩涡环绕,晕彩色云层。",
+                    "switch": [
+                        {
+                            "q": "先去木卫二",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先去木卫一",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_2/3.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_2/3.mp3)",
                     "text": "木卫二表面,覆盖着厚厚的冰层,有冰川、冰山等冰雪景观。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_3/story_2/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_3/story_2/4.mp3)",
-                    "text": "木卫一火山口,岩浆喷发直冲云霄,溅射四周。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_2/5.mp3)",
                     "text": "木星大气层内部,气流如同瀑布般奔腾,漩涡和云层交错。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_2/6.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_2/6.mp3)",
                     "text": "大红斑风暴区域,漩涡状的扭曲气流吞噬着一切。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_3/story_2/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_2/7.mp3)",
+                    "text": "飞船驾驶舱内,控制台显示土星光环的图像,一个\"螺旋桨\"状物体在其中旋转。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_2/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_2/4.mp3)",
+                    "text": "木卫一火山口,岩浆喷发直冲云霄,溅射四周。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_2/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_2/5.mp3)",
+                    "text": "木星大气层内部,气流如同瀑布般奔腾,漩涡和云层交错。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_2/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_2/6.mp3)",
+                    "text": "大红斑风暴区域,漩涡状的扭曲气流吞噬着一切。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_3/story_2/7.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_2/7.mp3)",
                     "text": "飞船驾驶舱内,控制台显示土星光环的图像,一个\"螺旋桨\"状物体在其中旋转。"
@@ -823,39 +928,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_3/story_3/2.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_3/2.mp3)",
-                    "text": "土星光环区域,由无数碎石冰块组成的光环环绕在土星周围。"
+                    "text": "土星光环区域,由无数碎石冰块组成的光环环绕在土星周围。",
+                    "switch": [
+                        {
+                            "q": "先去土卫八",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先去土卫六",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_3/3.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_3/3.mp3)",
                     "text": "土卫八表面,光环粉尘遮盖了部分区域,形成两种不同颜色的'脸孔'。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_3/story_3/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_3/story_3/4.mp3)",
-                    "text": "土卫六表面,有湖泊、丘陵、河谷等地貌景观。大气层中有云层。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_3/5.mp3)",
                     "text": "土卫六丘陵地带,有小溪流过,树木和奇异生物点缀其间。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_3/6.mp3)",
                     "text": "土星光环内部区域,光环形成的漩涡和层流扭曲变形。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_3/story_3/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_3/7.mp3)",
+                    "text": "水星表面,布满环形山、陨石坑等特殊地貌。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_3/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_3/4.mp3)",
+                    "text": "土卫六表面,有湖泊、丘陵、河谷等地貌景观。大气层中有云层。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_3/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_3/5.mp3)",
+                    "text": "土卫六丘陵地带,有小溪流过,树木和奇异生物点缀其间。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_3/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_3/6.mp3)",
+                    "text": "土星光环内部区域,光环形成的漩涡和层流扭曲变形。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_3/story_3/7.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_3/7.mp3)",
                     "text": "水星表面,布满环形山、陨石坑等特殊地貌。"
@@ -883,39 +1023,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_3/story_4/2.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_4/2.mp3)",
-                    "text": "水星表面,布满环形山、陨石坑、沙丘等独特地貌。"
+                    "text": "水星表面,布满环形山、陨石坑、沙丘等独特地貌。",
+                    "switch": [
+                        {
+                            "q": "先去外部地形",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先分析内部",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_4/3.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_4/3.mp3)",
                     "text": "水星表面环形山区,有奇特的石质环形山群。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_3/story_4/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_3/story_4/4.mp3)",
-                    "text": "飞船驾驶舱内,控制台显示水星内部分层结构的数据。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_4/5.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_4/5.mp3)",
                     "text": "水星内部断层示意图,可见巨大的金属核心。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_3/story_4/6.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_4/6.mp3)",
                     "text": "水星夜空,一颗彗星拖着长长的尾迹从天边掠过。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_3/story_4/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_4/7.mp3)",
+                    "text": "飞船驾驶舱内,可可手持一张古老的星图查看。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_4/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_4/4.mp3)",
+                    "text": "飞船驾驶舱内,控制台显示水星内部分层结构的数据。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_4/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_4/5.mp3)",
+                    "text": "水星内部断层示意图,可见巨大的金属核心。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_3/story_4/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_3/story_4/6.mp3)",
+                    "text": "水星夜空,一颗彗星拖着长长的尾迹从天边掠过。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_3/story_4/7.png)",
                     "audio": "url(/data/books/book_1/chapter_3/story_4/7.mp3)",
                     "text": "飞船驾驶舱内,可可手持一张古老的星图查看。"
@@ -943,39 +1118,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_4/story_1/2.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_1/2.mp3)",
-                    "text": "他们首先来到外层的日冕区,却发现温度远高于内核区,令人疑惑。就在这时还目睹了罕见的日食!"
+                    "text": "他们首先来到外层的日冕区,却发现温度远高于内核区,令人疑惑。就在这时还目睹了罕见的日食!",
+                    "switch": [
+                        {
+                            "q": "先探索太阳外层结构",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "直接深入内核区域",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_1/3.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_1/3.mp3)",
                     "text": "孩子们开始分析日冕温度异常的原因,最后得出声波致热和磁重联这两种可能的理论解释。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_4/story_1/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_4/story_1/4.mp3)",
-                    "text": "他们鼓足勇气深入内核区,在那里目睹了离子温度高达数百万度的等离子体正在进行宏伟氢核聚变!"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_1/5.mp3)",
                     "text": "解开日冕谜团后,他们终于来到了内核中心,观察到了太阳能量核心的所在,终于彻底揭开谜底!"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_1/6.mp3)",
                     "text": "返回日冕层后,他们在温度异常的扭曲漩涡中发现了两种可能的解释现象 - 声波致热和磁重联!"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_4/story_1/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_1/7.mp3)",
+                    "text": "就在探索日冕层时,孩子们无意中发现了大量奇特的微粒在其中穿梭,这莫非就是传说中的中微子?"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_1/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_1/4.mp3)",
+                    "text": "他们鼓足勇气深入内核区,在那里目睹了离子温度高达数百万度的等离子体正在进行宏伟氢核聚变!"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_1/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_1/5.mp3)",
+                    "text": "解开日冕谜团后,他们终于来到了内核中心,观察到了太阳能量核心的所在,终于彻底揭开谜底!"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_1/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_1/6.mp3)",
+                    "text": "返回日冕层后,他们在温度异常的扭曲漩涡中发现了两种可能的解释现象 - 声波致热和磁重联!"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_4/story_1/7.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_1/7.mp3)",
                     "text": "就在探索日冕层时,孩子们无意中发现了大量奇特的微粒在其中穿梭,这莫非就是传说中的中微子?"
@@ -1003,39 +1213,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_4/story_2/2.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_2/2.mp3)",
-                    "text": "他们首先来到外层的日冕区,却发现温度远高于内核区,令人疑惑。就在这时还目睹了罕见的日食!"
+                    "text": "他们首先来到外层的日冕区,却发现温度远高于内核区,令人疑惑。就在这时还目睹了罕见的日食!",
+                    "switch": [
+                        {
+                            "q": "先研究日冕",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先探索内核",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_2/3.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_2/3.mp3)",
                     "text": "孩子们开始分析日冕温度异常的原因,最后得出声波致热和磁重联这两种可能的理论解释。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_4/story_2/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_4/story_2/4.mp3)",
-                    "text": "他们鼓足勇气深入内核区,在那里目睹了离子温度高达数百万度的等离子体正在进行宏伟氢核聚变!"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_2/5.mp3)",
                     "text": "解开日冕谜团后,他们终于来到了内核中心,观察到了太阳能量核心的所在,终于彻底揭开谜底!"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_2/6.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_2/6.mp3)",
                     "text": "返回日冕层后,他们在温度异常的扭曲漩涡中发现了两种可能的解释现象 - 声波致热和磁重联!"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_4/story_2/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_2/7.mp3)",
+                    "text": "就在探索日冕层时,孩子们无意中发现了大量奇特的微粒在其中穿梭,这莫非就是传说中的中微子?"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_2/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_2/4.mp3)",
+                    "text": "他们鼓足勇气深入内核区,在那里目睹了离子温度高达数百万度的等离子体正在进行宏伟氢核聚变!"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_2/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_2/5.mp3)",
+                    "text": "解开日冕谜团后,他们终于来到了内核中心,观察到了太阳能量核心的所在,终于彻底揭开谜底!"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_2/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_2/6.mp3)",
+                    "text": "返回日冕层后,他们在温度异常的扭曲漩涡中发现了两种可能的解释现象 - 声波致热和磁重联!"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_4/story_2/7.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_2/7.mp3)",
                     "text": "就在探索日冕层时,孩子们无意中发现了大量奇特的微粒在其中穿梭,这莫非就是传说中的中微子?"
@@ -1063,39 +1308,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_4/story_3/2.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_3/2.mp3)",
-                    "text": "孩子们回想起了太阳中微子的著名谜团 - 产生的中微子在途中神秘消失了一部分，令人费解!"
+                    "text": "孩子们回想起了太阳中微子的著名谜团 - 产生的中微子在途中神秘消失了一部分，令人费解!",
+                    "switch": [
+                        {
+                            "q": "先研究中微子的特性",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先探索传播路径",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_3/3.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_3/3.mp3)",
                     "text": "为解开谜底，他们决定先深入研究中微子的基本特性，通过实验孩子们意外发现中微子有相互转换的奇特性质!"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_4/story_3/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_4/story_3/4.mp3)",
-                    "text": "接下来他们决定沿着中微子的传播路径探索，果然在途中发现了中微子神秘消失的现象发生!"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_3/5.mp3)",
                     "text": "顺着路径继续前行，孩子们终于在一个节点区域发现了中微子消失的根源所在!"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_3/6.mp3)",
                     "text": "回到实验室后，他们再次研究中微子本身，终于发现了它们可以在三种类型间自由转换振荡的奇特本质!"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_4/story_3/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_3/7.mp3)",
+                    "text": "经过以上探索，孩子们终于完全掌握了'中微子振荡理论'，彻底解开了这个困扰科学家的谜团!"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_3/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_3/4.mp3)",
+                    "text": "接下来他们决定沿着中微子的传播路径探索，果然在途中发现了中微子神秘消失的现象发生!"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_3/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_3/5.mp3)",
+                    "text": "顺着路径继续前行，孩子们终于在一个节点区域发现了中微子消失的根源所在!"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_3/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_3/6.mp3)",
+                    "text": "回到实验室后，他们再次研究中微子本身，终于发现了它们可以在三种类型间自由转换振荡的奇特本质!"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_4/story_3/7.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_3/7.mp3)",
                     "text": "经过以上探索，孩子们终于完全掌握了'中微子振荡理论'，彻底解开了这个困扰科学家的谜团!"
@@ -1123,39 +1403,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_4/story_4/2.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_4/2.mp3)",
-                    "text": "于是,他们驾驶飞船展开了寻找太阳同胞恒星的探险之旅,希望能从中找到线索!"
+                    "text": "于是,他们驾驶飞船展开了寻找太阳同胞恒星的探险之旅,希望能从中找到线索!",
+                    "switch": [
+                        {
+                            "q": "先了解恒星是如何形成的",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先寻找太阳的具体同胞",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_4/3.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_4/3.mp3)",
                     "text": "为了找到太阳同胞,他们决定先学习恒星是如何形成的,通过模拟发现恒星是由尘埃云团逐渐聚集而成。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_4/story_4/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_4/story_4/4.mp3)",
-                    "text": "根据分析仪的数据,孩子们推测太阳的同胞们应该分布在离太阳3000光年的范围内,于是决定直接前往寻找!"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_4/5.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_4/5.mp3)",
                     "text": "了解恒星形成过程后,他们开始分析可能的太阳同胞分布区域,希望在其中找到踪迹。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_4/story_4/6.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_4/6.mp3)",
                     "text": "经过一路寻找,他们终于在某个区域发现了几颗疑似太阳同胞的恒星,但还需要继续观察和分析!"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_4/story_4/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_4/7.mp3)",
+                    "text": "就在继续寻找时,可可无意中发现了太阳生命有限的事实,这让孩子们更加迫切地想寻找太阳的同胞!"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_4/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_4/4.mp3)",
+                    "text": "根据分析仪的数据,孩子们推测太阳的同胞们应该分布在离太阳3000光年的范围内,于是决定直接前往寻找!"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_4/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_4/5.mp3)",
+                    "text": "了解恒星形成过程后,他们开始分析可能的太阳同胞分布区域,希望在其中找到踪迹。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_4/story_4/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_4/story_4/6.mp3)",
+                    "text": "经过一路寻找,他们终于在某个区域发现了几颗疑似太阳同胞的恒星,但还需要继续观察和分析!"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_4/story_4/7.png)",
                     "audio": "url(/data/books/book_1/chapter_4/story_4/7.mp3)",
                     "text": "就在继续寻找时,可可无意中发现了太阳生命有限的事实,这让孩子们更加迫切地想寻找太阳的同胞!"
@@ -1183,39 +1498,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_5/story_1/2.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_1/2.mp3)",
-                    "text": "小行星带区域,岩石星体遍布,前方出现一队敌舰。"
+                    "text": "小行星带区域,岩石星体遍布,前方出现一队敌舰。",
+                    "switch": [
+                        {
+                            "q": "利用恒星眨眼现象来逃脱",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "立即驾驶飞船撤离",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_1/3.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_1/3.mp3)",
                     "text": "行星大气层区域,有恒星在大气折射作用下闪烁。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_5/story_1/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_5/story_1/4.mp3)",
-                    "text": "小行星带区域,遍布碎石,四周是敌舰的包围。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_1/5.mp3)",
                     "text": "星云区域内,璀璨的尘埃云雾环绕在某个中心。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_1/6.mp3)",
                     "text": "星云核心区域,刚刚形成的新星在闪耀发光。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_5/story_1/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_1/7.mp3)",
+                    "text": "控制室内,显示着新星形成的数据与理论分析。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_1/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_1/4.mp3)",
+                    "text": "小行星带区域,遍布碎石,四周是敌舰的包围。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_1/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_1/5.mp3)",
+                    "text": "星云区域内,璀璨的尘埃云雾环绕在某个中心。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_1/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_1/6.mp3)",
+                    "text": "星云核心区域,刚刚形成的新星在闪耀发光。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_5/story_1/7.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_1/7.mp3)",
                     "text": "控制室内,显示着新星形成的数据与理论分析。"
@@ -1243,39 +1593,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_5/story_2/2.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_2/2.mp3)",
-                    "text": "星云中心区域,一团高密度的物质云雾在缓缓旋转。"
+                    "text": "星云中心区域,一团高密度的物质云雾在缓缓旋转。",
+                    "switch": [
+                        {
+                            "q": "近距离观察新星形成过程",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "对他进行全方位的分析",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_2/3.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_2/3.mp3)",
                     "text": "飞船驾驶舱内,可可驾驶着飞船逐渐接近星云核心。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_5/story_2/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_5/story_2/4.mp3)",
-                    "text": "控制室内,各种探测仪器正在收集新星的数据。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_2/5.mp3)",
                     "text": "新星核心区域,能量在不断集中,温度逐渐升高。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_2/6.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_2/6.mp3)",
                     "text": "飞船控制室内,分析结果显示新星形成的各种数据。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_5/story_2/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_2/7.mp3)",
+                    "text": "深空中,新星带领着小队飞船前往下一个目的地。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_2/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_2/4.mp3)",
+                    "text": "控制室内,各种探测仪器正在收集新星的数据。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_2/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_2/5.mp3)",
+                    "text": "新星核心区域,能量在不断集中,温度逐渐升高。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_2/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_2/6.mp3)",
+                    "text": "飞船控制室内,分析结果显示新星形成的各种数据。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_5/story_2/7.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_2/7.mp3)",
                     "text": "深空中,新星带领着小队飞船前往下一个目的地。"
@@ -1303,39 +1688,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_5/story_3/2.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_3/2.mp3)",
-                    "text": "钻石怪兽出没区域,一头巨大的钻石怪兽突然出现。"
+                    "text": "钻石怪兽出没区域,一头巨大的钻石怪兽突然出现。",
+                    "switch": [
+                        {
+                            "q": "驾驶飞船迅速逃离",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "试着与钻石怪兽沟通",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_3/3.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_3/3.mp3)",
                     "text": "飞船驾驶舱内,可可紧急驾驶飞船逃离怪兽追击。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_5/story_3/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_5/story_3/4.mp3)",
-                    "text": "飞船停靠区,爱爱通过舷窗与钻石怪兽沟通交谈。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_3/5.mp3)",
                     "text": "控制室内,显示钻石怪兽的来历和行为习性资料。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_3/6.mp3)",
                     "text": "钻石怪兽的栖息地,浮现在舷窗中。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_5/story_3/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_3/7.mp3)",
+                    "text": "飞船驾驶舱内,钻石怪兽赠予小队一件道具。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_3/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_3/4.mp3)",
+                    "text": "飞船停靠区,爱爱通过舷窗与钻石怪兽沟通交谈。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_3/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_3/5.mp3)",
+                    "text": "控制室内,显示钻石怪兽的来历和行为习性资料。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_3/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_3/6.mp3)",
+                    "text": "钻石怪兽的栖息地,浮现在舷窗中。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_5/story_3/7.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_3/7.mp3)",
                     "text": "飞船驾驶舱内,钻石怪兽赠予小队一件道具。"
@@ -1363,39 +1783,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_5/story_4/2.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_4/2.mp3)",
-                    "text": "变星内部广阔空间,到处是形形色色的小恒星。"
+                    "text": "变星内部广阔空间,到处是形形色色的小恒星。",
+                    "switch": [
+                        {
+                            "q": "先与小恒星交流",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先确认环境是否安全",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_4/3.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_4/3.mp3)",
                     "text": "控制室内,可可调用分析仪扫描小恒星的数据。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_5/story_4/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_5/story_4/4.mp3)",
-                    "text": "变星内部世界全景,可见各种璀璨的恒星景观。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_4/5.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_4/5.mp3)",
                     "text": "小恒星们的聚集地,它们正热情地与小队交谈。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_4/6.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_4/6.mp3)",
                     "text": "变星内部景观,一些奇特的恒星现象正在发生。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_5/story_4/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_4/7.mp3)",
+                    "text": "从小恒星视角看,小队和它们在一起玩耍互动。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_4/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_4/4.mp3)",
+                    "text": "变星内部世界全景,可见各种璀璨的恒星景观。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_4/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_4/5.mp3)",
+                    "text": "小恒星们的聚集地,它们正热情地与小队交谈。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_4/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_4/6.mp3)",
+                    "text": "变星内部景观,一些奇特的恒星现象正在发生。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_5/story_4/7.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_4/7.mp3)",
                     "text": "从小恒星视角看,小队和它们在一起玩耍互动。"
@@ -1423,39 +1878,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_5/story_5/2.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_5/2.mp3)",
-                    "text": "舰队旗舰内,可可操作分析仪扫描数据。"
+                    "text": "舰队旗舰内,可可操作分析仪扫描数据。",
+                    "switch": [
+                        {
+                            "q": "先了解两支舰队的历史渊源",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先劝解他们停止冲突",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_5/3.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_5/3.mp3)",
                     "text": "资料室内,有两支舰队的渊源历史资料。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_5/story_5/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_5/story_5/4.mp3)",
-                    "text": "两支舰队临时停火的会面场景。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_5/5.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_5/5.mp3)",
                     "text": "会议室内,双方领袖面对面交流对话。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_5/story_5/6.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_5/6.mp3)",
                     "text": "和平签字仪式现场,双方领袖在签字。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_5/story_5/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_5/7.mp3)",
+                    "text": "小队驾驶全新的星际穿梭机,开启新的旅程。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_5/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_5/4.mp3)",
+                    "text": "两支舰队临时停火的会面场景。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_5/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_5/5.mp3)",
+                    "text": "会议室内,双方领袖面对面交流对话。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_5/story_5/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_5/story_5/6.mp3)",
+                    "text": "和平签字仪式现场,双方领袖在签字。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_5/story_5/7.png)",
                     "audio": "url(/data/books/book_1/chapter_5/story_5/7.mp3)",
                     "text": "小队驾驶全新的星际穿梭机,开启新的旅程。"
@@ -1483,39 +1973,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_6/story_1/2.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_1/2.mp3)",
-                    "text": "银河系中心区域,一个巨大的旋涡状星云。"
+                    "text": "银河系中心区域,一个巨大的旋涡状星云。",
+                    "switch": [
+                        {
+                            "q": "先近距离窥探神秘的中心区景象",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先学习银河系的基本知识",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_1/3.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_1/3.mp3)",
                     "text": "银河中心区,有黑洞和恒星团等天文景象。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_6/story_1/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_6/story_1/4.mp3)",
-                    "text": "飞船舱内的图书馆,有各种关于银河系的资料和模型。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_1/5.mp3)",
                     "text": "银河中心区一览,可见黑洞、恒星团等宏伟景观。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_1/6.mp3)",
                     "text": "控制室内,分析仪显示银河系各部分的数据信息。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_6/story_1/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_1/7.mp3)",
+                    "text": "太空中,一群神秘的球状星团在向他们招手。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_1/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_1/4.mp3)",
+                    "text": "飞船舱内的图书馆,有各种关于银河系的资料和模型。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_1/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_1/5.mp3)",
+                    "text": "银河中心区一览,可见黑洞、恒星团等宏伟景观。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_1/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_1/6.mp3)",
+                    "text": "控制室内,分析仪显示银河系各部分的数据信息。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_6/story_1/7.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_1/7.mp3)",
                     "text": "太空中,一群神秘的球状星团在向他们招手。"
@@ -1543,39 +2068,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_6/story_2/2.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_2/2.mp3)",
-                    "text": "某个星系内,各种形状的恒星和星云聚集。"
+                    "text": "某个星系内,各种形状的恒星和星云聚集。",
+                    "switch": [
+                        {
+                            "q": "先了解什么是球状星团",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先去认识那些特殊的双星系统",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_2/3.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_2/3.mp3)",
                     "text": "实验室内,有模拟演示'星团'形成的装置。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_6/story_2/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_6/story_2/4.mp3)",
-                    "text": "一个类似行星的三维空间,上面有两个恒星相互运转。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_2/5.mp3)",
                     "text": "集会现场,有一些神秘的双星朋友在与他们交谈。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_2/6.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_2/6.mp3)",
                     "text": "球状星团示意图,成千上万的恒星环绕在一起。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_6/story_2/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_2/7.mp3)",
+                    "text": "集会现场人山人海,各路特殊恒星云集在一起。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_2/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_2/4.mp3)",
+                    "text": "一个类似行星的三维空间,上面有两个恒星相互运转。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_2/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_2/5.mp3)",
+                    "text": "集会现场,有一些神秘的双星朋友在与他们交谈。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_2/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_2/6.mp3)",
+                    "text": "球状星团示意图,成千上万的恒星环绕在一起。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_6/story_2/7.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_2/7.mp3)",
                     "text": "集会现场人山人海,各路特殊恒星云集在一起。"
@@ -1603,39 +2163,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_6/story_3/2.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_3/2.mp3)",
-                    "text": "风暴区域内,尘埃和气体旋涡环绕在小队飞船周围。"
+                    "text": "风暴区域内,尘埃和气体旋涡环绕在小队飞船周围。",
+                    "switch": [
+                        {
+                            "q": "先了解星尘风暴的原因",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先寻找出路，摆脱风暴",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_3/3.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_3/3.mp3)",
                     "text": "控制室内,屏幕上显示了星尘分布的全景图。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_6/story_3/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_6/story_3/4.mp3)",
-                    "text": "风暴中心区域,似乎有一条安全通道可供穿行。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_3/5.mp3)",
                     "text": "风暴边缘区域,风暴正在减弱。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_3/6.mp3)",
                     "text": "风暴中心宁静区,星尘稀疏地漂浮。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_6/story_3/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_3/7.mp3)",
+                    "text": "风暴中心区域,一个由星尘凝聚形成的怪兽出现了。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_3/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_3/4.mp3)",
+                    "text": "风暴中心区域,似乎有一条安全通道可供穿行。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_3/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_3/5.mp3)",
+                    "text": "风暴边缘区域,风暴正在减弱。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_3/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_3/6.mp3)",
+                    "text": "风暴中心宁静区,星尘稀疏地漂浮。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_6/story_3/7.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_3/7.mp3)",
                     "text": "风暴中心区域,一个由星尘凝聚形成的怪兽出现了。"
@@ -1663,39 +2258,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_6/story_4/2.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_4/2.mp3)",
-                    "text": "风暴区域内,尘埃和气体旋涡环绕在小队飞船周围。"
+                    "text": "风暴区域内,尘埃和气体旋涡环绕在小队飞船周围。",
+                    "switch": [
+                        {
+                            "q": "先学习银河系内智慧生命可能存在形式",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "直接去寻找智慧生命",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_4/3.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_4/3.mp3)",
                     "text": "控制室内,屏幕上显示了星尘分布的全景图。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_6/story_4/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_6/story_4/4.mp3)",
-                    "text": "风暴中心区域,似乎有一条安全通道可供穿行。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_4/5.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_4/5.mp3)",
                     "text": "风暴边缘区域,风暴正在减弱。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_6/story_4/6.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_4/6.mp3)",
                     "text": "风暴中心宁静区,星尘稀疏地漂浮。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_6/story_4/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_4/7.mp3)",
+                    "text": "风暴中心区域,一个由星尘凝聚形成的怪兽出现了。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_4/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_4/4.mp3)",
+                    "text": "风暴中心区域,似乎有一条安全通道可供穿行。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_4/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_4/5.mp3)",
+                    "text": "风暴边缘区域,风暴正在减弱。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_6/story_4/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_6/story_4/6.mp3)",
+                    "text": "风暴中心宁静区,星尘稀疏地漂浮。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_6/story_4/7.png)",
                     "audio": "url(/data/books/book_1/chapter_6/story_4/7.mp3)",
                     "text": "风暴中心区域,一个由星尘凝聚形成的怪兽出现了。"
@@ -1723,39 +2353,81 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_7/story_1/2.png)",
                     "audio": "url(/data/books/book_1/chapter_7/story_1/2.mp3)",
-                    "text": "拼图展开区,一个由多个星系组成的星系群图案渐渐成型。"
+                    "text": "拼图展开区,一个由多个星系组成的星系群图案渐渐成型。",
+                    "switch": [
+                        {
+                            "q": "先研究星系团的成因",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先继续拼其他星系",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_7/story_1/3.png)",
                     "audio": "url(/data/books/book_1/chapter_7/story_1/3.mp3)",
                     "text": "实验室内,有模拟演示‘星系群’形成的装置。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_7/story_1/4.png)",
                     "audio": "url(/data/books/book_1/chapter_7/story_1/4.mp3)",
                     "text": "拼图区域,各种形状奇特的星系图案拼凑而出。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_7/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_7/story_1/5.mp3)",
                     "text": "拼图区域,两个星系的图案正在相互靠近。"
                 },
                 {
                     "index": 6,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_7/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_7/story_1/6.mp3)",
                     "text": "资料室内,有关于星系群形成和星系碰撞的图书资料。"
                 },
                 {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_7/story_1/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_7/story_1/7.mp3)",
+                    "text": "拼图区域,两个拼凑出的星系即将发生相撞。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_7/story_1/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_7/story_1/4.mp3)",
+                    "text": "拼图区域,各种形状奇特的星系图案拼凑而出。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_7/story_1/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_7/story_1/5.mp3)",
+                    "text": "拼图区域,两个星系的图案正在相互靠近。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_7/story_1/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_7/story_1/6.mp3)",
+                    "text": "资料室内,有关于星系群形成和星系碰撞的图书资料。"
+                },
+                {
+                    "index": 11,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_7/story_1/7.png)",
                     "audio": "url(/data/books/book_1/chapter_7/story_1/7.mp3)",
                     "text": "拼图区域,两个拼凑出的星系即将发生相撞。"
@@ -2023,39 +2695,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_8/story_1/2.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_1/2.mp3)",
-                    "text": "银河系中心区域,一个巨大的黑洞正在吞噬周围物质。"
+                    "text": "银河系中心区域,一个巨大的黑洞正在吞噬周围物质。",
+                    "switch": [
+                        {
+                            "q": "先了解黑洞的本质",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先建造观测站研究黑洞",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_1/3.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_1/3.mp3)",
                     "text": "资料室内,有关于黑洞形成原理的多媒体展示。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_8/story_1/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_8/story_1/4.mp3)",
-                    "text": "太空中,一个小型空间站的建造工地正在进行作业。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_1/5.mp3)",
                     "text": "观测站内部的控制室,各种设备林立。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_1/6.mp3)",
                     "text": "观测站资料室内,墙上贴满了关于黑洞的各种理论公式。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_8/story_1/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_1/7.mp3)",
+                    "text": "观测站入口处,许多其他探险者正在交流讨论。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_1/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_1/4.mp3)",
+                    "text": "太空中,一个小型空间站的建造工地正在进行作业。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_1/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_1/5.mp3)",
+                    "text": "观测站内部的控制室,各种设备林立。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_1/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_1/6.mp3)",
+                    "text": "观测站资料室内,墙上贴满了关于黑洞的各种理论公式。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_8/story_1/7.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_1/7.mp3)",
                     "text": "观测站入口处,许多其他探险者正在交流讨论。"
@@ -2083,39 +2790,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_8/story_2/2.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_2/2.mp3)",
-                    "text": "黑洞观测站旁边的空地上,可可正在绘制设计图纸。"
+                    "text": "黑洞观测站旁边的空地上,可可正在绘制设计图纸。",
+                    "switch": [
+                        {
+                            "q": "先建造黑洞别墅的主体建筑",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先准备科普展示内容",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_2/3.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_2/3.mp3)",
                     "text": "建筑工地上,一座奇特建筑正在拔地而起。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_8/story_2/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_8/story_2/4.mp3)",
-                    "text": "资料室内,各种关于黑洞的书籍和模型摆满一地。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_2/5.mp3)",
                     "text": "'黑洞别墅'内部,各种科普展品和解说装置一应俱全。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_2/6.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_2/6.mp3)",
                     "text": "正面入口处,一座独特的'黑洞别墅'科普中心正式开放。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_8/story_2/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_2/7.mp3)",
+                    "text": "科普中心内,来自银河各地的探险者们驻足参观讲解。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_2/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_2/4.mp3)",
+                    "text": "资料室内,各种关于黑洞的书籍和模型摆满一地。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_2/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_2/5.mp3)",
+                    "text": "'黑洞别墅'内部,各种科普展品和解说装置一应俱全。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_2/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_2/6.mp3)",
+                    "text": "正面入口处,一座独特的'黑洞别墅'科普中心正式开放。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_8/story_2/7.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_2/7.mp3)",
                     "text": "科普中心内,来自银河各地的探险者们驻足参观讲解。"
@@ -2143,39 +2885,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_8/story_3/2.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_3/2.mp3)",
-                    "text": "观测站附近的太空区域,一颗明亮的恒星正狂奔而过。"
+                    "text": "观测站附近的太空区域,一颗明亮的恒星正狂奔而过。",
+                    "switch": [
+                        {
+                            "q": "立即采取行动拯救那个恒星",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先了解黑洞吞噬的真相",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_3/3.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_3/3.mp3)",
                     "text": "飞船驾驶舱内,可可紧急驾驶,爱爱坐在旁边运用亲和力。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_8/story_3/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_8/story_3/4.mp3)",
-                    "text": "资料室内,可可查阅关于黑洞的各种理论资料。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_3/5.mp3)",
                     "text": "太空中,飞船正在靠近那颗失控的恒星。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_3/6.mp3)",
                     "text": "观测站附近的区域,可见黑洞的视界边缘。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_8/story_3/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_3/7.mp3)",
+                    "text": "太空中,一颗恒星被黑洞的潮汐力撕裂,形成了强烈的光线射线。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_3/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_3/4.mp3)",
+                    "text": "资料室内,可可查阅关于黑洞的各种理论资料。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_3/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_3/5.mp3)",
+                    "text": "太空中,飞船正在靠近那颗失控的恒星。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_3/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_3/6.mp3)",
+                    "text": "观测站附近的区域,可见黑洞的视界边缘。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_8/story_3/7.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_3/7.mp3)",
                     "text": "太空中,一颗恒星被黑洞的潮汐力撕裂,形成了强烈的光线射线。"
@@ -2203,39 +2980,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_8/story_4/2.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_4/2.mp3)",
-                    "text": "报名现场人头攒动,可可在操作报名系统。"
+                    "text": "报名现场人头攒动,可可在操作报名系统。",
+                    "switch": [
+                        {
+                            "q": "先进行黑洞知识的理论学习",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "直接实地观测",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_4/3.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_4/3.mp3)",
                     "text": "理论学习教室内,可可正在讲解黑洞知识。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_8/story_4/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_8/story_4/4.mp3)",
-                    "text": "太空中,一支观测队伍正在驶向目的地。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_4/5.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_4/5.mp3)",
                     "text": "太空中,一颗恒星被黑洞的引力撕扯着,形成扭曲景象。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_4/6.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_4/6.mp3)",
                     "text": "观测船队内部,一块巨大的显示屏正在播放讲解视频。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_8/story_4/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_4/7.mp3)",
+                    "text": "黑洞附近区域,强烈的X射线和高能粒子四射。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_4/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_4/4.mp3)",
+                    "text": "太空中,一支观测队伍正在驶向目的地。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_4/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_4/5.mp3)",
+                    "text": "太空中,一颗恒星被黑洞的引力撕扯着,形成扭曲景象。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_4/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_4/6.mp3)",
+                    "text": "观测船队内部,一块巨大的显示屏正在播放讲解视频。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_8/story_4/7.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_4/7.mp3)",
                     "text": "黑洞附近区域,强烈的X射线和高能粒子四射。"
@@ -2263,39 +3075,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_8/story_5/2.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_5/2.mp3)",
-                    "text": "宇宙飞船驾驶室，星系背景，线路指南在航天仪器上显示。"
+                    "text": "宇宙飞船驾驶室，星系背景，线路指南在航天仪器上显示。",
+                    "switch": [
+                        {
+                            "q": "先在路上学习黑洞知识",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "直接前往太空乐园",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_5/3.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_5/3.mp3)",
                     "text": "宇宙飞船内部，黑洞的图片、模型和书本散布在桌子上。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_8/story_5/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_8/story_5/4.mp3)",
-                    "text": "星辰壮观的宇宙，宇宙飞船在夜空中漂浮。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_5/5.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_5/5.mp3)",
                     "text": "星空璀璨，彩色的太空乐园在视野前方。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_8/story_5/6.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_5/6.mp3)",
                     "text": "太空乐园内船舱，有各种模拟黑洞的景点。"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_8/story_5/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_5/7.mp3)",
+                    "text": "曲折爬升的过山车，模拟黑洞包围其中。"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_5/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_5/4.mp3)",
+                    "text": "星辰壮观的宇宙，宇宙飞船在夜空中漂浮。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_5/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_5/5.mp3)",
+                    "text": "星空璀璨，彩色的太空乐园在视野前方。"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_8/story_5/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_8/story_5/6.mp3)",
+                    "text": "太空乐园内船舱，有各种模拟黑洞的景点。"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_8/story_5/7.png)",
                     "audio": "url(/data/books/book_1/chapter_8/story_5/7.mp3)",
                     "text": "曲折爬升的过山车，模拟黑洞包围其中。"
@@ -2323,32 +3170,60 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_9/story_1/2.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_1/2.mp3)",
-                    "text": "星舰被导向神秘星球，星球被神秘的光环覆盖。"
+                    "text": "星舰被导向神秘星球，星球被神秘的光环覆盖。",
+                    "switch": [
+                        {
+                            "q": "立即降落去探查神秘星球",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先到达太空乐园",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_9/story_1/3.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_1/3.mp3)",
                     "text": "星球表面的奇异生态环境，含硅与氨的异域生命形态浮现。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_9/story_1/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_9/story_1/4.mp3)",
-                    "text": "宇宙乐园的各种展览和体验区，如模拟黑洞、大爆炸的模型"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_9/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_1/5.mp3)",
                     "text": "关键星球在宇宙中显得小而闪耀，围绕星球的其他星体都含蓄而神秘。"
                 },
                 {
+                    "index": 5,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_9/story_1/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_1/6.mp3)",
+                    "text": "古老的天文台隐藏在神秘星球的背后，充满了岁月的痕迹。"
+                },
+                {
                     "index": 6,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_9/story_1/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_1/4.mp3)",
+                    "text": "宇宙乐园的各种展览和体验区，如模拟黑洞、大爆炸的模型"
+                },
+                {
+                    "index": 7,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_9/story_1/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_1/5.mp3)",
+                    "text": "关键星球在宇宙中显得小而闪耀，围绕星球的其他星体都含蓄而神秘。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_9/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_1/6.mp3)",
                     "text": "古老的天文台隐藏在神秘星球的背后，充满了岁月的痕迹。"
@@ -2376,32 +3251,60 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_9/story_2/2.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_2/2.mp3)",
-                    "text": "天文观测仪器，一片星空与暗物质分布图"
+                    "text": "天文观测仪器，一片星空与暗物质分布图",
+                    "switch": [
+                        {
+                            "q": "继续解码",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "寻求外部帮助",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_9/story_2/3.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_2/3.mp3)",
                     "text": "充满数字和编码的研究环境"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_9/story_2/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_9/story_2/4.mp3)",
-                    "text": "星际生命的栖息地，各种星际生物"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_9/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_2/5.mp3)",
                     "text": "星球、暗物质，充满宇宙奥秘的场景"
                 },
                 {
+                    "index": 5,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_9/story_2/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_2/6.mp3)",
+                    "text": "古老天文台出现，背景有穿梭机"
+                },
+                {
                     "index": 6,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_9/story_2/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_2/4.mp3)",
+                    "text": "星际生命的栖息地，各种星际生物"
+                },
+                {
+                    "index": 7,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_9/story_2/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_2/5.mp3)",
+                    "text": "星球、暗物质，充满宇宙奥秘的场景"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_9/story_2/6.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_2/6.mp3)",
                     "text": "古老天文台出现，背景有穿梭机"
@@ -2429,39 +3332,74 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_9/story_3/2.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_3/2.mp3)",
-                    "text": "室内环境，展示宇宙大爆炸的高科技设备"
+                    "text": "室内环境，展示宇宙大爆炸的高科技设备",
+                    "switch": [
+                        {
+                            "q": "先去体验黑洞撕裂恒星的奇观",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先学习宇宙天体演化的知识",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_9/story_3/3.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_3/3.mp3)",
                     "text": "星际环境，仿真模拟黑洞景象"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_9/story_3/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_9/story_3/4.mp3)",
-                    "text": "室内环境，多媒体展示宇宙演化内容"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_9/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_3/5.mp3)",
                     "text": "室内环境，正在展示恒星被撕裂的强烈场景"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 5,
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_9/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_3/6.mp3)",
                     "text": "室内环境，深邃星空和恒星变化的模型"
                 },
                 {
+                    "index": 6,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_9/story_3/7.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_3/7.mp3)",
+                    "text": "星际环境，时空穿越门在前方，乐园工作人员在旁边解说"
+                },
+                {
                     "index": 7,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_9/story_3/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_3/4.mp3)",
+                    "text": "室内环境，多媒体展示宇宙演化内容"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_9/story_3/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_3/5.mp3)",
+                    "text": "室内环境，正在展示恒星被撕裂的强烈场景"
+                },
+                {
+                    "index": 9,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_9/story_3/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_3/6.mp3)",
+                    "text": "室内环境，深邃星空和恒星变化的模型"
+                },
+                {
+                    "index": 10,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_9/story_3/7.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_3/7.mp3)",
                     "text": "星际环境，时空穿越门在前方，乐园工作人员在旁边解说"
@@ -2489,32 +3427,60 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_9/story_4/2.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_4/2.mp3)",
-                    "text": "时空隧道，色彩艳丽的涡旋状"
+                    "text": "时空隧道，色彩艳丽的涡旋状",
+                    "switch": [
+                        {
+                            "q": "穿梭到过去的太空时代",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "穿梭到未来的太空时代",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_9/story_4/3.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_4/3.mp3)",
                     "text": "20世纪末背景，科学家研究宇宙膨胀现象"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_9/story_4/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_9/story_4/4.mp3)",
-                    "text": "未来星球背景，显示高度发达的科技和消逝的星系"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_9/story_4/5.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_4/5.mp3)",
                     "text": "兄妹俩置身于未来实验室"
                 },
                 {
+                    "index": 5,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_9/story_4/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_4/6.mp3)",
+                    "text": "重返现实的地球"
+                },
+                {
                     "index": 6,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_9/story_4/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_4/4.mp3)",
+                    "text": "未来星球背景，显示高度发达的科技和消逝的星系"
+                },
+                {
+                    "index": 7,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_9/story_4/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_9/story_4/5.mp3)",
+                    "text": "兄妹俩置身于未来实验室"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_9/story_4/6.png)",
                     "audio": "url(/data/books/book_1/chapter_9/story_4/6.mp3)",
                     "text": "重返现实的地球"
@@ -2542,32 +3508,60 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_10/story_1/2.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_1/2.mp3)",
-                    "text": "时光隧道中，背景是旋转的彩色光线和时钟齿轮，充满神秘感和未来科技感。"
+                    "text": "时光隧道中，背景是旋转的彩色光线和时钟齿轮，充满神秘感和未来科技感。",
+                    "switch": [
+                        {
+                            "q": "先遇见中国僧人",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "先遇见玛雅人",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 3,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_10/story_1/3.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_1/3.mp3)",
                     "text": "古代中国的市集，背景有古建筑、农田、和天文观测台，还有农历挂历刻度盘。"
                 },
                 {
                     "index": 4,
-                    "branch": "default",
-                    "pic": "url(/data/books/book_1/chapter_10/story_1/4.png)",
-                    "audio": "url(/data/books/book_1/chapter_10/story_1/4.mp3)",
-                    "text": "郁郁葱葱的树林，古老的树木枝繁叶茂，地面上覆盖着厚厚的落叶。树上有各种各样的动植物。太阳光透过树叶斑驳地照射在地面上。"
-                },
-                {
-                    "index": 5,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_10/story_1/5.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_1/5.mp3)",
                     "text": "玛雅文明的金字塔和天文仪器，有用石头刻成的历法盘符号和星象图，有大量的绿色植物环绕。"
                 },
                 {
+                    "index": 5,
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_10/story_1/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_10/story_1/6.mp3)",
+                    "text": "现代科技的实验室，背景有高科技仪器、大屏幕上显示着不同星球的天文数据。"
+                },
+                {
                     "index": 6,
-                    "branch": "default",
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_10/story_1/4.png)",
+                    "audio": "url(/data/books/book_1/chapter_10/story_1/4.mp3)",
+                    "text": "郁郁葱葱的树林，古老的树木枝繁叶茂，地面上覆盖着厚厚的落叶。树上有各种各样的动植物。太阳光透过树叶斑驳地照射在地面上。"
+                },
+                {
+                    "index": 7,
+                    "branch": "2",
+                    "pic": "url(/data/books/book_1/chapter_10/story_1/5.png)",
+                    "audio": "url(/data/books/book_1/chapter_10/story_1/5.mp3)",
+                    "text": "玛雅文明的金字塔和天文仪器，有用石头刻成的历法盘符号和星象图，有大量的绿色植物环绕。"
+                },
+                {
+                    "index": 8,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_10/story_1/6.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_1/6.mp3)",
                     "text": "现代科技的实验室，背景有高科技仪器、大屏幕上显示着不同星球的天文数据。"
@@ -2602,25 +3596,46 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_10/story_2/3.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_2/3.mp3)",
-                    "text": "玛雅文明遗址，背景是宏伟的金字塔和祭坛，周围环绕着茂密的丛林。画面中有玛雅石刻，刻有复杂的符号和图案。"
+                    "text": "玛雅文明遗址，背景是宏伟的金字塔和祭坛，周围环绕着茂密的丛林。画面中有玛雅石刻，刻有复杂的符号和图案。",
+                    "switch": [
+                        {
+                            "q": "去天文台顶部观察天空",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "去地下古老档案室查找资料",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_10/story_2/4.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_2/4.mp3)",
                     "text": "天文台的顶部，夜空中满天星斗，背景是辽阔的夜空和闪烁的星星。天文台顶部有巨大的观测望远镜。地上有一些星象图和坐垫。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_10/story_2/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_10/story_2/6.mp3)",
+                    "text": "玛雅文明的天文观测台，背景是展示准确历法系统的复杂天文仪器和象形文字符号。观测台旁边是盛开的花草和站岗的石像。"
+                },
+                {
+                    "index": 6,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_10/story_2/5.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_2/5.mp3)",
                     "text": "地下古老档案室，密密麻麻的古书籍、卷轴和时间记录仪。背景是昏暗的低矮空间，墙上挂满了用古老语言标注的图表。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 7,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_10/story_2/6.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_2/6.mp3)",
                     "text": "玛雅文明的天文观测台，背景是展示准确历法系统的复杂天文仪器和象形文字符号。观测台旁边是盛开的花草和站岗的石像。"
@@ -2655,25 +3670,46 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_10/story_3/3.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_3/3.mp3)",
-                    "text": "同样的古希腊天文台，背景多了几本打开的书籍，显示地球自转和公转的图示。僧人和天文学家正围着书籍讨论。天文学家展示了天文仪器和时间刻度盘。"
+                    "text": "同样的古希腊天文台，背景多了几本打开的书籍，显示地球自转和公转的图示。僧人和天文学家正围着书籍讨论。天文学家展示了天文仪器和时间刻度盘。",
+                    "switch": [
+                        {
+                            "q": "继续在古希腊学习历法知识",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "返回玛雅进行实践",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_10/story_3/4.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_3/4.mp3)",
                     "text": "天文台的内部书库，书架上摆满了各种天文书籍和古老卷轴。背景是古朴的木制书架和长桌，桌上还有星象图。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_10/story_3/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_10/story_3/6.mp3)",
+                    "text": "玛雅文明的天文观测台，背景是复杂的天文仪器和象形文字符号。观测台旁边是盛开的花草和站岗的石像。"
+                },
+                {
+                    "index": 6,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_10/story_3/5.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_3/5.mp3)",
                     "text": "玛雅文明的祭坛，背景是宏伟的金字塔和祭坛，周围环绕着茂密的丛林。可可和爱爱在祭坛上进行实验。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 7,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_10/story_3/6.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_3/6.mp3)",
                     "text": "玛雅文明的天文观测台，背景是复杂的天文仪器和象形文字符号。观测台旁边是盛开的花草和站岗的石像。"
@@ -2708,25 +3744,46 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_10/story_4/3.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_4/3.mp3)",
-                    "text": "中世纪阿拉伯的市场，背景是高塔和清真寺，市场上摆满了各种货物，有挂着月亮图案的旗帜。"
+                    "text": "中世纪阿拉伯的市场，背景是高塔和清真寺，市场上摆满了各种货物，有挂着月亮图案的旗帜。",
+                    "switch": [
+                        {
+                            "q": "前往中国农村了解阴历",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "继续在阿拉伯深入探讨伊斯兰历法",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_10/story_4/4.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_4/4.mp3)",
                     "text": "中国农村的村落，背景有古老的房屋、稻田和文昌塔。画面中有农民劳作，鸡鸭在田野间觅食。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_10/story_4/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_10/story_4/6.mp3)",
+                    "text": "现代化的会议室，背景是大屏幕展示了新的历法系统，房间里有不同国家的代表，桌上摆放着代表各国的小旗。"
+                },
+                {
+                    "index": 6,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_10/story_4/5.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_4/5.mp3)",
                     "text": "阿拉伯的海边，背景是辽阔的大海和星罗棋布的小渔村，有人正在捕鱼。沙滩上有贝壳和海草。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 7,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_10/story_4/6.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_4/6.mp3)",
                     "text": "现代化的会议室，背景是大屏幕展示了新的历法系统，房间里有不同国家的代表，桌上摆放着代表各国的小旗。"
@@ -2761,25 +3818,46 @@
                     "branch": "default",
                     "pic": "url(/data/books/book_1/chapter_10/story_5/3.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_5/3.mp3)",
-                    "text": "天文台内部，背景有书架和挂满图表的墙壁，桌上摆放着各种天文仪器和国际计量大会的纪念品。一块黑板上写着“1秒=9192361770倍铯原子振荡周期”。"
+                    "text": "天文台内部，背景有书架和挂满图表的墙壁，桌上摆放着各种天文仪器和国际计量大会的纪念品。一块黑板上写着“1秒=9192361770倍铯原子振荡周期”。",
+                    "switch": [
+                        {
+                            "q": "去黄道十二星座观察星空中的变化",
+                            "goto": {
+                                "branch": "1"
+                            }
+                        },
+                        {
+                            "q": "去地心研究地球自转速度",
+                            "goto": {
+                                "branch": "2"
+                            }
+                        }
+                    ]
                 },
                 {
                     "index": 4,
-                    "branch": "default",
+                    "branch": "1",
                     "pic": "url(/data/books/book_1/chapter_10/story_5/4.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_5/4.mp3)",
                     "text": "黄道十二星座位置，背景是满天星斗和黄道十二星座，星座之间有细线连接成图案。可可在星空下操作星际分析仪。爱爱与星星交流，眼中闪烁着光芒。"
                 },
                 {
                     "index": 5,
-                    "branch": "default",
+                    "branch": "1",
+                    "pic": "url(/data/books/book_1/chapter_10/story_5/6.png)",
+                    "audio": "url(/data/books/book_1/chapter_10/story_5/6.mp3)",
+                    "text": "未来化的宇宙会议室，背景是象征不同星球的旗帜和宇宙星图，展示屏幕上闪烁着各种数据。"
+                },
+                {
+                    "index": 6,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_10/story_5/5.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_5/5.mp3)",
                     "text": "地心通道入口，通道用岩石和水晶构造，闪烁着神秘的光芒。背景有熔岩河流和烧红的岩壁，充满奇幻的色彩。"
                 },
                 {
-                    "index": 6,
-                    "branch": "default",
+                    "index": 7,
+                    "branch": "2",
                     "pic": "url(/data/books/book_1/chapter_10/story_5/6.png)",
                     "audio": "url(/data/books/book_1/chapter_10/story_5/6.mp3)",
                     "text": "未来化的宇宙会议室，背景是象征不同星球的旗帜和宇宙星图，展示屏幕上闪烁着各种数据。"
