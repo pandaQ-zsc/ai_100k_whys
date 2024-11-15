@@ -10,7 +10,7 @@ export default function Login() {
 
   return (
     <div className={styles.bg}>
-      <p className={styles.title}>欢迎来到 “万问奇遇”</p>
+      <p className={styles.title}>欢迎来到 “星际奇遇”</p>
       <div className={styles.container}>
         <div className={styles.login}>
           <div className={styles.iconLink} onClick={() => navigate("/landing", {replace:true})}>

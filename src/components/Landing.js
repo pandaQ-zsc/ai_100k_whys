@@ -16,7 +16,7 @@ export default function Landing() {
 
   return (
     <div className={styles.landing}>
-      <p className={styles.title}>欢迎来到 “万问奇遇”</p>
+      <p className={styles.title}>欢迎来到 “星际奇遇”</p>
       <div className={styles.imgs}>
         <img
           className={styles.img_left}
