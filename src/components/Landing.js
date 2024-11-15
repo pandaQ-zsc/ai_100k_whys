@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Landing.module.css";
 import landingLeft from "../imgs/landing_left.png";
 import landingMid from "../imgs/landing_mid.png";

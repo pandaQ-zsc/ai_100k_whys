@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "turn.js";
 import $ from "jquery";
 
-export default function Turn(props) {
+const Turn = (props) => {
   let fadeClass = useRef("");
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function Turn(props) {
       }
     }
     // 	//   document.addEventListener("keydown", handleKeyDown, false);
-  }, [props.options]);
+  }, [props]);
 
   return (
     <div
@@ -28,3 +28,4 @@ export default function Turn(props) {
     </div>
   );
 }
+export default Turn;

@@ -1,17 +1,18 @@
 import * as React from "react";
+
 import { Routes, Route, Link } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Landing from "./components/Landing";
 import Login from "./components/Login";
-import Bookstore from "./components/Bookstore";
 import Bookshelf from "./components/Bookshelf";
 import MyBadge from "./components/MyBadge";
 import KbCard from "./components/KbCard";
 import ParentAccount from "./components/ParentAccount";
-import Book from "./components/book/Index";
-import Story from "./components/book/Story"
-import Frame from "./components/book/Frame";
+import Book from "./components/Book/Index";
+import Story from "./components/Book/Story"
+import Frame from "./components/Book/Frame";
+import Bookstore from './components/BookStore'
 
 export default function App() {
   /* Routes nest inside one another. Nested route paths build upon

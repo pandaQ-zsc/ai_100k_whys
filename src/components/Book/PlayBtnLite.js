@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from "./PlayBtnLite.module.css";
 import classNames from "classnames";
 import playIcon from "../../imgs/book-play.png";

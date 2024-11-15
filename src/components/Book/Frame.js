@@ -1,3 +1,4 @@
+import React from 'react';
 import classnames from "classnames";
 import styles from "./Frame.module.css";
 import Turn from "../Turn";

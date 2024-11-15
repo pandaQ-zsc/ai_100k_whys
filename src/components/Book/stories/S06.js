@@ -1,3 +1,4 @@
+import React from 'react';
 import { useNavigate } from "react-router-dom";
 import bg from "./imgs/s06.png";
 import PlayBtn from "./PlayBtn";

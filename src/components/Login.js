@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Login.module.css";
 import { useNavigate } from "react-router-dom";
 import classNames from "classnames";
@@ -14,11 +15,12 @@ export default function Login() {
         <div className={styles.login}>
           <div className={styles.iconLink} onClick={() => navigate("/landing", {replace:true})}>
             <div
-              className={classNames(styles.kid, styles.iconBg, "rounded-full",'shadow-lg')}
+              className={classNames(styles.kid, styles.iconBg, 'rounded-full',
+                'shadow-lg')}
             >
-              <img src={kidAcc} alt="kidAcc" width="auto" height="auto" />
+              <img src={kidAcc} alt="kidAcc" width="150px" height="150px" />
             </div>
-            <span className={classNames("text-xl")}>儿童</span>
+            <span className={classNames('text-xl')}>儿童</span>
           </div>
           <div className={styles.iconLink} onClick={() => navigate("/parent", {replace:true})}>
             <div
@@ -28,9 +30,9 @@ export default function Login() {
                 "rounded-full",'shadow-lg'
               )}
             >
-              <img src={parentAcc} alt="parentAcc" width="auto" height="auto" />
+              <img src={parentAcc} alt="parentAcc" width="150px" height="150px" />
             </div>
-            <span className={classNames("text-xl")}>家长</span>            
+            <span className={classNames("text-xl")}>家长</span>
           </div>
         </div>
       </div>

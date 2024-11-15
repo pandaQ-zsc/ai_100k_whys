@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from "./Index.module.css";
 import { useNavigate, useParams } from "react-router-dom";
 import PlayBtnLite from "./PlayBtnLite";

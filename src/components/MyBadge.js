@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./MyBadge.module.css";
 
 export default function MyBadge() {

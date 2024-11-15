@@ -1,5 +1,5 @@
-import styles from "./Bookstore.module.css";
-
+import React from "react";
+import styles from './BookStore.module.css';
 export default function Bookstore() {
   return (
     <div className={styles.bg}>

@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./KbCard.module.css";
 
 export default function KbCard() {
