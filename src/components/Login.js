@@ -4,13 +4,14 @@ import { useNavigate } from "react-router-dom";
 import classNames from "classnames";
 import kidAcc from "../imgs/kid_acc.png";
 import parentAcc from "../imgs/parent_acc.png";
+import colors from 'tailwindcss/colors'
 
 export default function Login() {
   const navigate = useNavigate();
 
   return (
     <div className={styles.bg}>
-      <p className={styles.title}>欢迎来到 “星际奇遇”</p>
+      <p className={styles.title}>欢迎来到 “星球奇遇”</p>
       <div className={styles.container}>
         <div className={styles.login}>
           <div className={styles.iconLink} onClick={() => navigate("/landing", {replace:true})}>

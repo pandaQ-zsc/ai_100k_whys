@@ -7,11 +7,13 @@
     font-size: 28px;
     text-align: center;
     padding-top: 60px;
+    color: black;
 }
 .container {
     width: 450px;
     margin: auto;
     padding-top: 80px;
+    color: black;
 }
 .login {
     display: flex;
